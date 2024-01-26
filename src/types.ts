@@ -15,7 +15,8 @@ export interface WithSpinner {
 //
 // 2. The instantiated class is then added to ControlManager either by `addControlOnLoad` or `addControlOnLive`. This
 //    ensures, that on `DOMContentLoaded` the `initialize` function of class is called. This method should implement
-//    initialization of the control dependent on fully loaded DOM. The `context` argument is equal to `document` in this call.
+//    initialization of the control dependent on fully loaded DOM. The `context` argument is equal to `document` in this
+//    call.
 //
 // 3. In the case of using `addControlOnLive`, two methods are called after each successful Ajax request:
 //

@@ -30,9 +30,13 @@ naja.registerExtension(new ExtensionName())
 ```
 
 ```typescript
-import { controlManager } from '@peckadesign/pd-naja'
+import naja from 'naja'
+import { ControlManager } from '@peckadesign/pd-naja'
 import SomeControl from '@/js/Controls/SomeControl' // `SomeControl` must implement `Control` interface
 import SomeAnotherControl from '@/js/Controls/SomeAnotherControl'
+
+// Create instance of ControlManager
+const controlManager = new ControlManager(naja)
 
 // This control is only initialized on page load
 controlManager.addControlOnLoad(SomeControl)
